@@ -2,7 +2,7 @@ import { test, expect, request } from '@playwright/test';
 
 test.describe('Favorite API', () => {
   let authToken: string;
-
+    console.log("1");
   test.beforeAll(async ({ playwright }) => {
     // Tạo request context với baseURL để khỏi phải lặp lại
     const requestContext = await playwright.request.newContext({
